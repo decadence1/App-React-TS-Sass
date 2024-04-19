@@ -1,0 +1,123 @@
+.rotating-images-container {
+  position: absolute;
+  width: 300px; /* Ширина контейнера, можете изменить на ваше значение */
+  height: 300px; /* Высота контейнера, можете изменить на ваше значение */
+  opacity: 0; /* Устанавливаем начальную прозрачность */
+  animation: fadeInAndMove 2s ease forwards; /* Анимация появления и задержки */
+  z-index: 10; /* Поднимаем над телефоном */
+}
+
+.rotating-image {
+  position: absolute;
+  width: auto;
+  height: auto;
+  animation: moveUpDown 5s ease-in-out 1s infinite; /* Анимация движения вверх-вниз с задержкой 1 секунда */
+}
+
+.rotating-image.watch {
+  z-index: 1;
+  left: 800.97px;
+  top: 292px;
+}
+
+.rotating-image.headphones {
+  z-index: 2;
+  left: 770px;
+  top: 126px;
+}
+
+.rotating-image.vr {
+  z-index: 3;
+  left: 1270.02px;
+  top: 54px;
+}
+
+.rotating-image.notepad {
+  z-index: 4;
+  left: 1200px;
+  top: 350px;
+}
+
+.rotating-image.part1 {
+  z-index: 5;
+  left: 1109.78px;
+  top: 510px;
+}
+
+.rotating-image.part2 {
+  z-index: 6;
+  left: 600px;
+  top: 400px;
+}
+
+.rotating-image.part3 {
+  z-index: 7;
+  left: 638px;
+  top: 150px;
+}
+
+.rotating-image.part4 {
+  z-index: 8;
+  left: -46px;
+  top: 203px;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0); /* Начальное и конечное положение - не смещаем */
+  }
+  50% {
+    transform: translateY(20px); /* Движение вниз */
+  }
+}
+
+@keyframes fadeInAndMove {
+  0% {
+    opacity: 0; /* Начальная прозрачность - изображения не видны */
+    transform: translateY(-100px); /* Изначальное смещение вверх */
+  }
+  100% {
+    opacity: 1; /* Конечная прозрачность - изображения видны */
+    transform: translateY(0); /* Смещение в исходное положение */
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /* Для контейнера с вращающимися изображениями */
+  .rotating-images-container {
+    /* Уменьшаем ширину контейнера */
+    width: 150px;
+    /* Уменьшаем высоту контейнера */
+    height: 150px;
+    /* Разрешаем изображениям выходить за пределы контейнера */
+    overflow: visible;
+  }
+
+  /* Для каждого изображения */
+  .rotating-image {
+    /* Уменьшаем ширину изображения до 30% относительно родительского контейнера */
+    width: 30%;
+    /* Автоматический расчет высоты */
+    height: auto;
+    /* Переопределяем позиционирование, чтобы изображения не сдвигались */
+    position: absolute;
+  }
+}
+
+/* Медиа-запросы для мобильных устройств с шириной экрана до 600px */
+@media only screen and (max-width: 600px) {
+  /* Для контейнера с вращающимися изображениями */
+  .rotating-images-container {
+    /* Еще больше уменьшаем ширину контейнера */
+    width: 100px;
+    /* Еще больше уменьшаем высоту контейнера */
+    height: 100px;
+  }
+
+  /* Для каждого изображения */
+  .rotating-image {
+    /* Уменьшаем размер изображения еще больше */
+    width: 20%;
+  }
+}

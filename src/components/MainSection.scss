@@ -1,0 +1,53 @@
+.main-section {
+  display: flex;
+  margin-top: 100px;
+  margin-left: calc((100% - 1568px) / 2);
+  margin-right: calc((100% - 1568px) / 2);
+  max-width: 1568px;
+  max-height: 829px;
+  background-image: url("Rectangle_43.png");
+  background-size: cover;
+  mix-blend-mode: hard-light;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-text {
+  font-family: "Roboto";
+  display: flex;
+  position: absolute;
+  padding-top: 177px;
+  font-size: 52px;
+  padding-left: 45px;
+  margin-top: 0;
+  color: white;
+}
+
+.mini-text {
+  font-family: "Roboto";
+  position: absolute;
+  padding-top: 462px;
+  padding-left: 45px;
+  // right: 70px;
+  // text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: "NAMU";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  background: linear-gradient(90deg, #38dbff 0%, #571cff 50%, #ed1dff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.phone {
+  position: absolute;
+  left: 964px;
+  right: 297px;
+  bottom: 121px;
+}

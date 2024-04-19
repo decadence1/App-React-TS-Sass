@@ -1,0 +1,69 @@
+.mini-section {
+  display: inline-block; /* Делаем мини-секции инлайновыми блоками */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* ваш стиль для box shadow */
+  border-radius: 24px;
+  width: 340px; /* Задаем ширину мини-секции */
+  height: 230px; /* Задаем высоту мини-секции */
+  text-align: center; /* выравнивание текста по центру */
+  position: relative; /* устанавливаем позиционирование для .number */
+  margin-top: 521px; /* отступ сверху от главной секции */
+  margin-left: 45px; /* отступ слева от главной секции */
+  margin-bottom: 70px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.0625) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(22.5px);
+
+  /* Начальное состояние - скрытое */
+  opacity: 0;
+  transform: translateY(-20px); /* Начальное смещение вверх */
+  animation: fadeInMiniSection 1s ease forwards; /* Анимация появления */
+  animation-delay: 1s; /* Задержка перед началом анимации */
+}
+
+.number {
+  font-family: "Roboto";
+  position: absolute;
+  top: 40px; /* располагаем по центру сверху */
+  left: 0; /* выравниваем по левому краю */
+  right: 0; /* выравниваем по правому краю */
+  margin: 0 auto; /* центрируем по горизонтали */
+  width: 50px; /* ширина блока с номером */
+  height: 50px; /* высота блока с номером */
+  line-height: 50px; /* выравнивание по вертикали */
+  font-size: 26px;
+  color: white;
+  background: radial-gradient(
+    circle at center,
+    #3597ff 0%,
+    rgba(53, 151, 255, 0) 100%
+  );
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+
+.text {
+  font-family: "Roboto";
+  margin-top: 133px;
+  margin-bottom: 62px;
+  margin-left: 29px;
+  margin-right: 31px;
+  color: white;
+}
+
+.mini-section:last-child {
+  margin-right: 0;
+}
+
+@keyframes fadeInMiniSection {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
