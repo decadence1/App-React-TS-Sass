@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/apptest/static/css/main.10519b90.css",
+    "main.js": "/apptest/static/js/main.5a07dcda.js",
+    "static/js/453.ed3810f9.chunk.js": "/apptest/static/js/453.ed3810f9.chunk.js",
+    "static/media/Rectangle_43.png": "/apptest/static/media/Rectangle_43.20cb160a11c4aca67ed4.png",
+    "static/media/mobileback.png": "/apptest/static/media/mobileback.351b958741ea8b4dd8cd.png",
+    "static/media/phone.png": "/apptest/static/media/phone.4767e68ad495c9e170e0.png",
+    "static/media/vr.png": "/apptest/static/media/vr.18c76a2d0f3df5d8f2d4.png",
+    "static/media/notepad.png": "/apptest/static/media/notepad.994858baa402a1800b4e.png",
+    "static/media/watch.png": "/apptest/static/media/watch.621adadcb728b632e653.png",
+    "static/media/headphones.png": "/apptest/static/media/headphones.0f51da41bf98abe5d9dd.png",
+    "index.html": "/apptest/index.html",
+    "main.10519b90.css.map": "/apptest/static/css/main.10519b90.css.map",
+    "main.5a07dcda.js.map": "/apptest/static/js/main.5a07dcda.js.map",
+    "453.ed3810f9.chunk.js.map": "/apptest/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10519b90.css",
+    "static/js/main.5a07dcda.js"
+  ]
+}
