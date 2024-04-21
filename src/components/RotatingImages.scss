@@ -113,11 +113,40 @@
     width: 100px;
     /* Еще больше уменьшаем высоту контейнера */
     height: 100px;
+    right: 1250px;
   }
 
   /* Для каждого изображения */
   .rotating-image {
     /* Уменьшаем размер изображения еще больше */
-    width: 20%;
+    width: 100%;
+  }
+
+  .rotating-image.vr {
+    top: 30px;
+    left: 1230px;
+  }
+
+  .rotating-image.notepad {
+    top: 120px;
+    left: 1220px;
+  }
+
+  .rotating-image.watch {
+    left: 1020px;
+    top: 100px;
+    width: 80%;
+  }
+
+  .rotating-image.part1 {
+    position: relative;
+    visibility: hidden;
+  }
+
+  .rotating-image.headphones {
+    left: 1030px;
+    top: 20px;
+    width: 63px;
+    height: 68px;
   }
 }

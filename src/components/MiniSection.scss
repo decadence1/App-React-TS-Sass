@@ -1,13 +1,18 @@
 .mini-section {
-  display: inline-block; /* Делаем мини-секции инлайновыми блоками */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* ваш стиль для box shadow */
+  display: grid;
+  grid-template-columns: repeat(
+    1,
+    1fr
+  ); /* На больших экранах - 4 элемента в ряд */
+  grid-template-rows: auto;
+  gap: 10px; /* Добавляем промежуток между элементами */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 24px;
-  width: 340px; /* Задаем ширину мини-секции */
-  height: 230px; /* Задаем высоту мини-секции */
-  text-align: center; /* выравнивание текста по центру */
-  position: relative; /* устанавливаем позиционирование для .number */
-  margin-top: 521px; /* отступ сверху от главной секции */
-  margin-left: 45px; /* отступ слева от главной секции */
+  // width: 340px;
+  text-align: center;
+  position: relative;
+  margin-top: 521px;
+  margin-left: 45px;
   margin-bottom: 70px;
   background: linear-gradient(
     180deg,
@@ -15,24 +20,22 @@
     rgba(255, 255, 255, 0) 100%
   );
   backdrop-filter: blur(22.5px);
-
-  /* Начальное состояние - скрытое */
   opacity: 0;
-  transform: translateY(-20px); /* Начальное смещение вверх */
-  animation: fadeInMiniSection 1s ease forwards; /* Анимация появления */
-  animation-delay: 1s; /* Задержка перед началом анимации */
+  transform: translateY(-20px);
+  animation: fadeInMiniSection 1s ease forwards;
+  animation-delay: 1s;
 }
 
 .number {
   font-family: "Roboto";
   position: absolute;
-  top: 40px; /* располагаем по центру сверху */
-  left: 0; /* выравниваем по левому краю */
-  right: 0; /* выравниваем по правому краю */
-  margin: 0 auto; /* центрируем по горизонтали */
-  width: 50px; /* ширина блока с номером */
-  height: 50px; /* высота блока с номером */
-  line-height: 50px; /* выравнивание по вертикали */
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   font-size: 26px;
   color: white;
   background: radial-gradient(
@@ -53,10 +56,6 @@
   color: white;
 }
 
-.mini-section:last-child {
-  margin-right: 0;
-}
-
 @keyframes fadeInMiniSection {
   from {
     opacity: 0;
@@ -65,5 +64,25 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .mini-section {
+    grid-template-columns: repeat(1, 2fr); /* На поменьше - 2 элемента в ряд */
+    width: 330px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mini-section {
+    grid-template-columns: repeat(1, 1fr); /* На маленьких - 1 элемент в ряд */
+    width: 100%; /* Меняем ширину на 100% для полной адаптивности */
+    max-width: 330px; /* Добавляем максимальную ширину */
+    margin-left: auto; /* Центрируем блок по горизонтали */
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 }
