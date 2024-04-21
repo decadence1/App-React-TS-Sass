@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/apptest/static/css/main.10519b90.css",
-    "main.js": "/apptest/static/js/main.5a07dcda.js",
-    "static/js/453.ed3810f9.chunk.js": "/apptest/static/js/453.ed3810f9.chunk.js",
-    "static/media/Rectangle_43.png": "/apptest/static/media/Rectangle_43.20cb160a11c4aca67ed4.png",
-    "static/media/mobileback.png": "/apptest/static/media/mobileback.351b958741ea8b4dd8cd.png",
-    "static/media/phone.png": "/apptest/static/media/phone.4767e68ad495c9e170e0.png",
-    "static/media/vr.png": "/apptest/static/media/vr.18c76a2d0f3df5d8f2d4.png",
-    "static/media/notepad.png": "/apptest/static/media/notepad.994858baa402a1800b4e.png",
-    "static/media/watch.png": "/apptest/static/media/watch.621adadcb728b632e653.png",
-    "static/media/headphones.png": "/apptest/static/media/headphones.0f51da41bf98abe5d9dd.png",
-    "index.html": "/apptest/index.html",
-    "main.10519b90.css.map": "/apptest/static/css/main.10519b90.css.map",
-    "main.5a07dcda.js.map": "/apptest/static/js/main.5a07dcda.js.map",
-    "453.ed3810f9.chunk.js.map": "/apptest/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/App-React-TS-Sass/static/css/main.e6abff79.css",
+    "main.js": "/App-React-TS-Sass/static/js/main.acb013a1.js",
+    "static/js/453.ed3810f9.chunk.js": "/App-React-TS-Sass/static/js/453.ed3810f9.chunk.js",
+    "static/media/Rectangle_43.png": "/App-React-TS-Sass/static/media/Rectangle_43.20cb160a11c4aca67ed4.png",
+    "static/media/mobileback.png": "/App-React-TS-Sass/static/media/mobileback.351b958741ea8b4dd8cd.png",
+    "static/media/phone.png": "/App-React-TS-Sass/static/media/phone.4767e68ad495c9e170e0.png",
+    "static/media/vr.png": "/App-React-TS-Sass/static/media/vr.18c76a2d0f3df5d8f2d4.png",
+    "static/media/notepad.png": "/App-React-TS-Sass/static/media/notepad.994858baa402a1800b4e.png",
+    "static/media/watch.png": "/App-React-TS-Sass/static/media/watch.621adadcb728b632e653.png",
+    "static/media/headphones.png": "/App-React-TS-Sass/static/media/headphones.0f51da41bf98abe5d9dd.png",
+    "index.html": "/App-React-TS-Sass/index.html",
+    "main.e6abff79.css.map": "/App-React-TS-Sass/static/css/main.e6abff79.css.map",
+    "main.acb013a1.js.map": "/App-React-TS-Sass/static/js/main.acb013a1.js.map",
+    "453.ed3810f9.chunk.js.map": "/App-React-TS-Sass/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10519b90.css",
-    "static/js/main.5a07dcda.js"
+    "static/css/main.e6abff79.css",
+    "static/js/main.acb013a1.js"
   ]
 }
